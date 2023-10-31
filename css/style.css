@@ -237,3 +237,14 @@ button {
   #desc6{
     grid-column: 3/7;
   }
+
+  main img{
+    transition: 1s ease;
+  }
+
+  main img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
