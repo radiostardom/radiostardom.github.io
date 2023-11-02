@@ -162,7 +162,7 @@ main img:hover{
   grid-row: 1;
   position: absolute;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   margin: auto;
 }
 
