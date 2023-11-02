@@ -133,11 +133,12 @@ label {
 
 textarea {
   height: 320px;
+  color: #8DBBFE;
 }
 
 button {
   background-color: #8DBBFE;
-  color: whitesmoke;
+  color: rgb(245, 245, 245);
   border: none;
   font-size: 20px;
   font-family: "din-2014", sans-serif;
@@ -156,7 +157,16 @@ main img:hover{
   }
 
 #decor{
-  grid-column: 2 / span 10;
+  grid-column: 2 / 10;
+  grid-row: 1;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  margin: auto;
+}
+
+#bigdecor{
+  width: 200%; 
   position: absolute;
   left: 0;
   z-index: 0;
@@ -189,6 +199,7 @@ main img:hover{
   grid-column: 3/7;
   filter: drop-shadow(4px 11px 3px #d2d0d0);
   align-self: center;
+  cursor:pointer;
 }
 
 #desc3{
@@ -200,6 +211,7 @@ main img:hover{
   grid-column: 8/11;
   filter: drop-shadow(4px 11px 3px #d2d0d0);
   align-self: center;
+  cursor:pointer;
 }
 
 #desc4{
@@ -250,6 +262,20 @@ main img:hover{
 #aboutmeimg {
   grid-column: 2/6;
   filter: drop-shadow(4px 11px 3px #d2d0d0);
+}
+
+#taglineMED {
+  position: relative;
+  grid-column: 2 / span 10;
+  text-align: center;
+  font-size: 40px;
+}
+
+#taglineBIG {
+  position: relative;
+  grid-column: 2 / span 10;
+  text-align: center;
+  font-size: 50px;
 }
 
 .artwork{

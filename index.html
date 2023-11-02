@@ -12,7 +12,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/avn6xqp.css">
-    </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -30,12 +29,13 @@
             </nav>
         </header>
 
+        <img src="img/TopDecor.png" alt="Stars" id = "decor">
         <main>
             <section>
-                <h1 id="tagline">El Wright is a San Francisco-based interdisciplinary designer and developer with a knack for product design and making things look cool.</h1>
+                <h1 id="taglineMED">El Wright is a San Francisco-based interdisciplinary designer and developer with a knack for product design and making things look cool.</h1>
             </section>
             <section>
-                <h1 id="tagline">Here are some of my projects:</h1>
+                <h1 id="tagline">Here are some of their projects:</h1>
             </section>
 
             <section>
@@ -55,7 +55,25 @@
             </section>
 
             <section>
-                <div id = "project3"> <img src="img/GameCovers.jpg" alt="Video Game Concept Covers"> </div>
+                <script>
+                    var images3 = [
+                        "img/game2.png",
+                        "img/game3.png",
+                        "img/game4.png",
+                        "img/game5.png",
+                        "img/game6.png",
+                        "img/game7.png",
+                        "img/game1.png"
+                    ];
+                    var currentIndex = 0;
+                
+                    function change3() {
+                        var imgElement = document.getElementById('switch3');
+                        currentIndex = (currentIndex + 1) % images3.length;
+                        imgElement.src = images3[currentIndex];
+                    }
+                </script>
+                <div id = "project3"> <img src="img/game2.png" alt="Video Game Concept Covers" id = "switch3" onclick ="change3();"> </div>
                 <div id ="desc3">
                 <h1>Video Game Concept Covers</h1>
                 <p>As a graphic designer with a passion for video games, I created a series of concept covers for a hypothetical career-themed video game. Each cover features a unique visual style and typography and highlights a different career, such as an architect, a comedian, or even an exorcist.<br><br>These covers showcase my ability to conceptualize and design visually appealing graphics that capture the essence of a particular profession.</p>
@@ -63,7 +81,24 @@
             </section>
 
             <section>
-                <div id = "project4"> <img src="img/Nature.png" alt="Nature Typography Series"> </div>
+                <script>
+                    var images4 = [
+                        "img/extinct.jpg",
+                        "img/indiff.jpg",
+                        "img/outlive.jpg",
+                        "img/reclaim.jpg",
+                        "img/transform.jpg"
+                    ];
+                    var currentIndex = 0;
+                
+                    function change4() {
+                        var imgElement = document.getElementById('switch4');
+                        currentIndex = (currentIndex + 1) % images4.length;
+                        imgElement.src = images4[currentIndex];
+                    }
+                </script>
+                
+                <div id = "project4"> <img src="img/Nature.png" alt="Nature Typography Series" id = "switch4" onclick ="change4();"> </div>
                 <div id ="desc4">
                 <h1>Nature Typography Series</h1>
                 <p>For this design project, I created a series of posters that depict signs that have interacted with nature on campus, showcasing the resilience of nature despite the destruction caused by humans. The typography in these posters is meant to be foreboding, representing the destructive aspects of humanity and the inevitability of nature continuing with or without us.<br><br>These posters are meant to be a reminder of the power and beauty of nature, and the fragility of humanity.</p>
